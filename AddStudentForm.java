@@ -48,6 +48,11 @@ public class AddStudentForm extends JFrame {
                 JOptionPane.showMessageDialog(this, "Name should contain letters only.");
                 return;
             }
+             if(id.length()!=8)
+            {
+            	JOptionPane.showMessageDialog(this, "Id must be of length 8");
+            	return;
+            }
 
             try {
                 double s1 = Double.parseDouble(txtS1.getText());
