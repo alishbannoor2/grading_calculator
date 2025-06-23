@@ -54,7 +54,7 @@ public class AddStudentForm extends JFrame {
             	JOptionPane.showMessageDialog(this, "Id must be of length 8");
             	return;
             }
-
+            //try catch for marks
             try {
                 double s1 = Double.parseDouble(txtS1.getText());
                 double s2 = Double.parseDouble(txtS2.getText());
